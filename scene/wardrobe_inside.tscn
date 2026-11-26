@@ -1,0 +1,128 @@
+[gd_scene format=3 uid="uid://ckj3fagkfqqvj"]
+
+[ext_resource type="Texture2D" uid="uid://tdpfg2nhf6j8" path="res://assetss/inside wardrobe .png" id="1_ayemf"]
+[ext_resource type="Script" uid="uid://xa4s7xbrm7h" path="res://scene/wardrobe_inside.gd" id="1_yevui"]
+[ext_resource type="FontFile" uid="uid://cpd3tk6cnp88c" path="res://assetss/text.ttf" id="3_iay8f"]
+[ext_resource type="Texture2D" uid="uid://cfn1jkk7uufxq" path="res://assetss/herbs.png" id="4_6yf2x"]
+[ext_resource type="Script" uid="uid://cy7dh8khxiral" path="res://scene/herb_1.gd" id="5_dllwn"]
+[ext_resource type="Script" uid="uid://dnd7fhq0o13rd" path="res://scene/herb_2.gd" id="6_dllwn"]
+[ext_resource type="Script" uid="uid://dm4rycdi7fgkc" path="res://scene/herb_3.gd" id="7_ssvyx"]
+[ext_resource type="Script" uid="uid://dfgk7dhhu0xd2" path="res://scene/herb_4.gd" id="8_enfnl"]
+[ext_resource type="Script" uid="uid://cu26nr6xps87p" path="res://scene/herb_5.gd" id="9_h66ws"]
+[ext_resource type="Script" uid="uid://bndax22tbom6g" path="res://scene/herb_6.gd" id="10_rpdtc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ijeb4"]
+atlas = ExtResource("4_6yf2x")
+region = Rect2(39.638885, 80.59325, 40.361115, 32.648254)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mel2l"]
+atlas = ExtResource("4_6yf2x")
+region = Rect2(39.442276, 0, 40.557724, 40.58917)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w2f55"]
+atlas = ExtResource("4_6yf2x")
+region = Rect2(40.67479, 40.558647, 39.32521, 39.700706)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_udj8g"]
+atlas = ExtResource("4_6yf2x")
+region = Rect2(0, 42.236855, 38.289536, 37.18257)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qhude"]
+atlas = ExtResource("4_6yf2x")
+region = Rect2(0, 80.538055, 40.627502, 39.461945)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3cfvr"]
+atlas = ExtResource("4_6yf2x")
+region = Rect2(0, 0, 39.33235, 43.684296)
+
+[node name="WardrobeInside" type="Node2D" unique_id=1348664810]
+script = ExtResource("1_yevui")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=461040441]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=1701863372]
+modulate = Color(1, 1, 1, 0.54901963)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=369440061]
+offset_left = 258.0
+offset_top = 85.0
+offset_right = 834.0
+offset_bottom = 624.0
+texture = ExtResource("1_ayemf")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=1666847384]
+offset_left = 433.0
+offset_top = 27.0
+offset_right = 659.0
+offset_bottom = 80.0
+theme_override_fonts/font = ExtResource("3_iay8f")
+theme_override_font_sizes/font_size = 40
+text = "ESC To Exit"
+
+[node name="herb 2" type="TextureButton" parent="CanvasLayer" unique_id=1138208664]
+offset_left = 633.00006
+offset_top = 324.0
+offset_right = 674.6667
+offset_bottom = 356.0
+scale = Vector2(2.5, 2.5)
+texture_normal = SubResource("AtlasTexture_ijeb4")
+ignore_texture_size = true
+script = ExtResource("6_dllwn")
+
+[node name="herb 3" type="TextureButton" parent="CanvasLayer" unique_id=773444494]
+offset_left = 373.0
+offset_top = 314.0
+offset_right = 413.0
+offset_bottom = 354.0
+scale = Vector2(2.5, 2.5)
+texture_normal = SubResource("AtlasTexture_mel2l")
+ignore_texture_size = true
+script = ExtResource("7_ssvyx")
+
+[node name="herb 4" type="TextureButton" parent="CanvasLayer" unique_id=598284407]
+offset_left = 627.99994
+offset_top = 139.99998
+offset_right = 667.99994
+offset_bottom = 179.99998
+scale = Vector2(2.5, 2.5)
+texture_normal = SubResource("AtlasTexture_w2f55")
+ignore_texture_size = true
+script = ExtResource("8_enfnl")
+
+[node name="herb 5" type="TextureButton" parent="CanvasLayer" unique_id=427235642]
+offset_left = 366.00003
+offset_top = 482.0
+offset_right = 408.40002
+offset_bottom = 519.2
+scale = Vector2(2.5, 2.5)
+texture_normal = SubResource("AtlasTexture_udj8g")
+ignore_texture_size = true
+script = ExtResource("9_h66ws")
+
+[node name="herb 6" type="TextureButton" parent="CanvasLayer" unique_id=563227339]
+offset_left = 645.99994
+offset_top = 479.99997
+offset_right = 685.99994
+offset_bottom = 520.0
+scale = Vector2(2.5, 2.5)
+texture_normal = SubResource("AtlasTexture_qhude")
+ignore_texture_size = true
+script = ExtResource("10_rpdtc")
+
+[node name="herb 1" type="TextureButton" parent="CanvasLayer" unique_id=2015231907]
+offset_left = 358.00003
+offset_top = 139.0
+offset_right = 398.00003
+offset_bottom = 179.0
+scale = Vector2(2.5, 2.5)
+texture_normal = SubResource("AtlasTexture_3cfvr")
+ignore_texture_size = true
+script = ExtResource("5_dllwn")

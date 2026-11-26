@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://kkwekjshjjo2"]
+
+[ext_resource type="Script" uid="uid://jvmqkdagu7bw" path="res://wardrobe.gd" id="1_x2h3x"]
+[ext_resource type="Texture2D" uid="uid://dll6hlw388j00" path="res://assetss/shop.png" id="2_w3nws"]
+[ext_resource type="FontFile" uid="uid://cpd3tk6cnp88c" path="res://assetss/text.ttf" id="3_w3nws"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mel2l"]
+size = Vector2(37, 39)
+
+[node name="Wardrobe" type="Area2D" unique_id=1332078563]
+script = ExtResource("1_x2h3x")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=875329632]
+scale = Vector2(3, 3)
+texture = ExtResource("2_w3nws")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2110435813]
+position = Vector2(0.5, 0.5)
+scale = Vector2(3, 3)
+shape = SubResource("RectangleShape2D_mel2l")
+
+[node name="InteractLabel" type="Label" parent="." unique_id=1488478312]
+offset_left = -73.0
+offset_top = -43.0
+offset_right = -61.0
+offset_bottom = -15.0
+theme_override_fonts/font = ExtResource("3_w3nws")
+theme_override_font_sizes/font_size = 19
+text = "E"
