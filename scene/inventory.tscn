@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://ddnmfa7aecfwc"]
+
+[ext_resource type="Texture2D" uid="uid://bvnuhs1mmd7vc" path="res://assetss/inventary.png" id="1_nbguh"]
+
+[node name="Inventory" type="CanvasLayer" unique_id=6507895]
+
+[node name="image" type="Sprite2D" parent="." unique_id=227016709]
+position = Vector2(562.125, 595)
+scale = Vector2(8.3125, 8.312501)
+texture = ExtResource("1_nbguh")
+region_enabled = true
+region_rect = Rect2(180.18764, 85.20413, 52.555984, 8.497627)
+
+[node name="herb1" type="Label" parent="." unique_id=905003898]
+offset_left = 380.12494
+offset_top = 601.0
+offset_right = 398.12494
+offset_bottom = 624.0
+text = "0"
+horizontal_alignment = 2
+
+[node name="herb2" type="Label" parent="." unique_id=1310613953]
+offset_left = 455.12494
+offset_top = 601.0
+offset_right = 473.12494
+offset_bottom = 624.0
+text = "0"
+horizontal_alignment = 2
+
+[node name="herb3" type="Label" parent="." unique_id=110759241]
+offset_left = 530.12494
+offset_top = 601.0
+offset_right = 548.12494
+offset_bottom = 624.0
+text = "0"
+horizontal_alignment = 2
+
+[node name="herb4" type="Label" parent="." unique_id=293175635]
+offset_left = 604.12494
+offset_top = 601.0
+offset_right = 622.12494
+offset_bottom = 624.0
+text = "0"
+horizontal_alignment = 2
+
+[node name="herb5" type="Label" parent="." unique_id=478986732]
+offset_left = 680.12494
+offset_top = 601.0
+offset_right = 698.12494
+offset_bottom = 624.0
+text = "0"
+horizontal_alignment = 2
+
+[node name="herb6" type="Label" parent="." unique_id=864866566]
+offset_left = 754.12494
+offset_top = 601.0
+offset_right = 772.12494
+offset_bottom = 624.0
+text = "0"
+horizontal_alignment = 2

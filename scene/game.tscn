@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cb70eu37xng7w" path="res://assetss/outside tiles.png" id="1_dbls1"]
 [ext_resource type="Texture2D" uid="uid://b2cxnrck25ncg" path="res://assetss/bg.png" id="2_33cqm"]
-[ext_resource type="PackedScene" uid="uid://drrpfga66uqid" path="res://scene/canvas_layer.tscn" id="2_ym5sv"]
+[ext_resource type="PackedScene" uid="uid://ddnmfa7aecfwc" path="res://scene/inventory.tscn" id="2_ym5sv"]
 [ext_resource type="PackedScene" uid="uid://cjwn0jh1dw2cq" path="res://scene/player.tscn" id="3_33cqm"]
 [ext_resource type="Texture2D" uid="uid://dcq7trcspwn0p" path="res://assetss/decorel.png" id="3_ll5lq"]
 [ext_resource type="Texture2D" uid="uid://dvfwqndpxf55h" path="res://assetss/inside tile.png" id="4_xlg7c"]
@@ -98,6 +98,8 @@ limit_top = -342
 limit_right = 400
 limit_bottom = 57
 
+[node name="Inventory" parent="player/Camera2D" unique_id=6507895 instance=ExtResource("2_ym5sv")]
+
 [node name="tiless" type="Node" parent="." unique_id=311340335]
 
 [node name="outside tiles" type="TileMap" parent="tiless" unique_id=686473611]
@@ -158,5 +160,3 @@ position = Vector2(-96, -31)
 [node name="Wardrobe" parent="." unique_id=1332078563 instance=ExtResource("10_yq8tf")]
 z_index = -2
 position = Vector2(339, -60)
-
-[node name="CanvasLayer" parent="." unique_id=1904954921 instance=ExtResource("2_ym5sv")]

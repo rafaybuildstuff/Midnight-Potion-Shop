@@ -14,6 +14,7 @@ func _ready() -> void:
 
 
 func _on_pressed() -> void:
+	print("Herb button pressed -> name: ", name, " | herb_id: ", herb_id)
 	if _tween != null and _tween.is_valid():
 		_tween.kill()
 	modulate = flash_color

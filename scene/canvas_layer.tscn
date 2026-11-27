@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://bvnuhs1mmd7vc" path="res://assetss/inventary.png" id="1_dp5bb"]
 [ext_resource type="Script" uid="uid://d06cgjpoc45m3" path="res://scene/canvas_layer.gd" id="1_gjjnk"]
 [ext_resource type="Texture2D" uid="uid://dtan54q2tcwaf" path="res://assetss/inventary 2.png" id="2_gjjnk"]
+[ext_resource type="Texture2D" uid="uid://cygcv0xlfy2d8" path="res://assetss/inventary 3).png" id="3_oc3i3"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_oc3i3"]
 atlas = ExtResource("1_dp5bb")
@@ -40,25 +41,69 @@ region = Rect2(180, 60, 60, 60)
 atlas = ExtResource("1_dp5bb")
 region = Rect2(0, 240, 60, 60)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_gjjnk"]
+atlas = ExtResource("1_dp5bb")
+region = Rect2(120, 180, 60, 60)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_83io0"]
+atlas = ExtResource("1_dp5bb")
+region = Rect2(60, 180, 60, 60)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8edp4"]
+atlas = ExtResource("1_dp5bb")
+region = Rect2(180, 120, 60, 60)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f6t0a"]
+atlas = ExtResource("1_dp5bb")
+region = Rect2(120, 120, 60, 60)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ums5s"]
+atlas = ExtResource("1_dp5bb")
+region = Rect2(240, 60, 60, 60)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_smmme"]
+atlas = ExtResource("3_oc3i3")
+region = Rect2(60, 120, 60, 60)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_ngnek"]
 atlas = ExtResource("2_gjjnk")
 region = Rect2(240, 180, 60, 60)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vye8b"]
+atlas = ExtResource("3_oc3i3")
+region = Rect2(0, 120, 60, 60)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_c7vqt"]
 atlas = ExtResource("2_gjjnk")
 region = Rect2(300, 180, 60, 60)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_pt5tf"]
+atlas = ExtResource("3_oc3i3")
+region = Rect2(60, 60, 60, 60)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_5gad3"]
 atlas = ExtResource("2_gjjnk")
 region = Rect2(120, 240, 60, 60)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_durv8"]
+atlas = ExtResource("3_oc3i3")
+region = Rect2(0, 60, 60, 60)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_espfs"]
 atlas = ExtResource("2_gjjnk")
 region = Rect2(180, 240, 60, 60)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_44288"]
+atlas = ExtResource("3_oc3i3")
+region = Rect2(60, 0, 60, 60)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_5rgua"]
 atlas = ExtResource("2_gjjnk")
 region = Rect2(0, 300, 60, 60)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ctl2g"]
+atlas = ExtResource("3_oc3i3")
+region = Rect2(0, 0, 60, 60)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cvoi6"]
 atlas = ExtResource("1_dp5bb")
@@ -164,10 +209,66 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_gjjnk")
+}],
+"loop": 1,
+"name": &"herb 1 2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_83io0")
+}],
+"loop": 1,
+"name": &"herb 1 2 3",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8edp4")
+}],
+"loop": 1,
+"name": &"herb 1 2 3 4",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f6t0a")
+}],
+"loop": 1,
+"name": &"herb 1 2 3 4 5",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ums5s")
+}],
+"loop": 1,
+"name": &"herb 1 2 3 4 5 6",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_smmme")
+}],
+"loop": 1,
+"name": &"herb 1 selected full inventory",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_ngnek")
 }],
 "loop": 1,
 "name": &"herb 2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vye8b")
+}],
+"loop": 1,
+"name": &"herb 2 selected full inventory",
 "speed": 5.0
 }, {
 "frames": [{
@@ -180,10 +281,26 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_pt5tf")
+}],
+"loop": 1,
+"name": &"herb 3 selected full inventory",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_5gad3")
 }],
 "loop": 1,
 "name": &"herb 4",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_durv8")
+}],
+"loop": 1,
+"name": &"herb 4 selected full inventory",
 "speed": 5.0
 }, {
 "frames": [{
@@ -196,10 +313,26 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_44288")
+}],
+"loop": 1,
+"name": &"herb 5 selected full inventory",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_5rgua")
 }],
 "loop": 1,
 "name": &"herb 6",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ctl2g")
+}],
+"loop": 1,
+"name": &"herb 6 selected full inventory",
 "speed": 5.0
 }, {
 "frames": [{
@@ -259,11 +392,25 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="CanvasLayer" type="CanvasLayer" unique_id=1904954921]
+[node name="CanvasLayer" type="CanvasLayer" unique_id=1904954921 groups=["inventory_ui"]]
 script = ExtResource("1_gjjnk")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1031915570]
-position = Vector2(150, 80)
+position = Vector2(694.00006, 601)
 scale = Vector2(3.825, 3)
 sprite_frames = SubResource("SpriteFrames_mel2l")
-animation = &"idle"
+animation = &"herb 1 2 3 4 5 6"
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=458430439]
+offset_left = 343.0
+offset_top = 599.0
+offset_right = 383.0
+offset_bottom = 639.0
+color = Color(0.20871013, 0.20871016, 0.20871013, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=1884966220]
+offset_left = 387.0
+offset_top = 598.0
+offset_right = 427.0
+offset_bottom = 638.0
+color = Color(0.20871013, 0.20871016, 0.20871013, 1)
