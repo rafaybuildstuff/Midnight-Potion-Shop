@@ -172,7 +172,7 @@ script = ExtResource("1_xo3ru")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1070059288]
 sprite_frames = SubResource("SpriteFrames_mel2l")
-animation = &"right idle"
+animation = &"left blue potion"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2120013628]
 position = Vector2(0, 5)

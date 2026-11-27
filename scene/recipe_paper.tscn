@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://bpn0b0coenkf8"]
+
+[ext_resource type="Script" uid="uid://mmoeg5i64f68" path="res://scene/recipe_paper.gd" id="1_qex80"]
+[ext_resource type="Texture2D" uid="uid://b5qcy8sointhm" path="res://assetss/POTION RECIPES.png" id="1_suyet"]
+[ext_resource type="FontFile" uid="uid://cpd3tk6cnp88c" path="res://assetss/text.ttf" id="2_qex80"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3cfvr"]
+size = Vector2(44.25, 60)
+
+[node name="recipe paper" type="Area2D" unique_id=1817519452]
+script = ExtResource("1_qex80")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1490510551]
+position = Vector2(6, -2.9999847)
+scale = Vector2(0.12155647, 0.11281311)
+texture = ExtResource("1_suyet")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=341818535]
+position = Vector2(5.875, -3)
+shape = SubResource("RectangleShape2D_3cfvr")
+
+[node name="Label" type="Label" parent="." unique_id=1133900951]
+offset_left = -45.0
+offset_top = -41.0
+offset_right = -14.0
+offset_bottom = -18.0
+theme_override_fonts/font = ExtResource("2_qex80")
+theme_override_font_sizes/font_size = 20

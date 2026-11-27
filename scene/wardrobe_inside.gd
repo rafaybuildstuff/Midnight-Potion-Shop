@@ -3,13 +3,15 @@ extends Node2D
 signal closed
 signal potion_brewed(potion_color: String)
 
-@onready var side_labels: Dictionary = {
-	1: $herb1,
-	2: $herb2,
-	3: $herb3,
-	4: $herb4,
-	5: $herb5,
-	6: $herb6,
+const MAX_HERB_COUNT := 2
+
+var side_counts: Dictionary = {
+	1: 0,
+	2: 0,
+	3: 0,
+	4: 0,
+	5: 0,
+	6: 0,
 }
 
 var selected_herbs: Array[int] = []
@@ -27,8 +29,23 @@ func _connect_herbs(node: Node) -> void:
 		_connect_herbs(child)
 
 
-func _on_herb_clicked(herb_id: int) -> void:
+func _get_inventory() -> Node:
 	var inv := get_tree().get_first_node_in_group("inventory_ui")
+	if inv == null:
+		inv = get_tree().root.find_child("Inventory", true, false)
+	return inv
+
+
+func _on_herb_clicked(herb_id: int) -> void:
+	if not side_counts.has(herb_id):
+		return
+
+	if side_counts[herb_id] >= MAX_HERB_COUNT:
+		return
+
+	side_counts[herb_id] += 1
+
+	var inv := _get_inventory()
 	if inv != null and inv.has_method("collect_herb"):
 		inv.collect_herb(herb_id)
 
@@ -45,16 +62,20 @@ func _on_herb_clicked(herb_id: int) -> void:
 			print("No matching potion pair.")
 
 
+func _find_side_label(herb_id: int) -> Label:
+	for candidate_name in ["herb" + str(herb_id), "herb " + str(herb_id)]:
+		var node := find_child(candidate_name, true, false)
+		if node is Label:
+			return node as Label
+	return null
+
+
 func _refresh_side_labels() -> void:
-	var inv := get_tree().get_first_node_in_group("inventory_ui")
-	for herb_id in side_labels:
-		var lbl: Label = side_labels[herb_id]
-		if lbl == null:
-			continue
-		if inv != null and inv.has_method("get_herb_count"):
-			lbl.text = str(inv.get_herb_count(herb_id))
-		else:
-			lbl.text = "0"
+	for herb_id in range(1, 7):
+		var lbl := _find_side_label(herb_id)
+		if lbl != null:
+			lbl.text = str(side_counts.get(herb_id, 0))
+			lbl.visible = true
 
 
 func _check_pair(a: int, b: int) -> String:

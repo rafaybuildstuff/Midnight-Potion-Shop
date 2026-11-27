@@ -11,6 +11,10 @@
 [ext_resource type="Texture2D" uid="uid://dbygscm0vxudu" path="res://assetss/boo.png" id="6_qpk70"]
 [ext_resource type="PackedScene" uid="uid://tanigbu4kclk" path="res://scene/counter.tscn" id="7_qpk70"]
 [ext_resource type="PackedScene" uid="uid://kkwekjshjjo2" path="res://scene/wardrobe.tscn" id="10_yq8tf"]
+[ext_resource type="PackedScene" uid="uid://cpq04s5ofd30q" path="res://scene/pot.tscn" id="12_sng2h"]
+[ext_resource type="FontFile" uid="uid://ddgr4hbqim1y2" path="res://assetss/heading.ttf" id="13_5g16k"]
+[ext_resource type="PackedScene" uid="uid://ddfgdm4fq00dg" path="res://scene/trashcan.tscn" id="14_81276"]
+[ext_resource type="PackedScene" uid="uid://bpn0b0coenkf8" path="res://scene/recipe_paper.tscn" id="15_ve786"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xwcet"]
 texture = ExtResource("1_dbls1")
@@ -134,7 +138,7 @@ z_index = -4
 tile_set = SubResource("TileSet_w2f55")
 rendering_quadrant_size = 40
 format = 2
-layer_0/tile_data = PackedInt32Array(-131068, 0, 0, -196611, 65536, 0, -262144, 0, 1, -262139, 0, 1)
+layer_0/tile_data = PackedInt32Array(-196611, 65536, 0, -262144, 0, 1, -262139, 0, 1, -131072, 0, 0)
 
 [node name="extras" type="Node" parent="." unique_id=194307507]
 
@@ -160,3 +164,49 @@ position = Vector2(-96, -31)
 [node name="Wardrobe" parent="." unique_id=1332078563 instance=ExtResource("10_yq8tf")]
 z_index = -2
 position = Vector2(339, -60)
+
+[node name="Pot" parent="." unique_id=1191390622 instance=ExtResource("12_sng2h")]
+z_index = -1
+position = Vector2(122, -29)
+
+[node name="labels" type="Node" parent="." unique_id=251813635]
+
+[node name="Label" type="Label" parent="labels" unique_id=735386718]
+z_index = -1
+offset_left = 104.0
+offset_top = -110.0
+offset_right = 147.0
+offset_bottom = -83.0
+theme_override_font_sizes/font_size = 8
+text = "Press [E] to
+ add herbs"
+
+[node name="Label3" type="Label" parent="labels" unique_id=1358666968]
+offset_left = 284.0
+offset_top = -134.0
+offset_right = 404.0
+offset_bottom = -123.0
+theme_override_fonts/font = ExtResource("13_5g16k")
+theme_override_font_sizes/font_size = 10
+text = "Herbs stock"
+
+[node name="Label2" type="Label" parent="labels" unique_id=269084802]
+z_index = -1
+offset_left = -5.0
+offset_top = -72.0
+offset_right = 10.0
+offset_bottom = -66.0
+theme_override_fonts/font = ExtResource("13_5g16k")
+theme_override_font_sizes/font_size = 5
+text = "[E]"
+
+[node name="Trashcan" parent="." unique_id=405379744 instance=ExtResource("14_81276")]
+z_index = -1
+position = Vector2(247, -21)
+
+[node name="recipe paper" parent="." unique_id=1817519452 instance=ExtResource("15_ve786")]
+visible = false
+modulate = Color(1, 1, 1, 0.92156863)
+z_index = -1
+position = Vector2(17, -58)
+scale = Vector2(0.5, 0.5)

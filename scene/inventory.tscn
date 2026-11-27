@@ -1,8 +1,10 @@
 [gd_scene format=3 uid="uid://ddnmfa7aecfwc"]
 
 [ext_resource type="Texture2D" uid="uid://bvnuhs1mmd7vc" path="res://assetss/inventary.png" id="1_nbguh"]
+[ext_resource type="Script" uid="uid://bqcodilrxi2u0" path="res://scene/inventory.gd" id="1_ql1wb"]
 
-[node name="Inventory" type="CanvasLayer" unique_id=6507895]
+[node name="Inventory" type="CanvasLayer" unique_id=6507895 groups=["inventoru_ui"]]
+script = ExtResource("1_ql1wb")
 
 [node name="image" type="Sprite2D" parent="." unique_id=227016709]
 position = Vector2(562.125, 595)
@@ -58,3 +60,45 @@ offset_right = 772.12494
 offset_bottom = 624.0
 text = "0"
 horizontal_alignment = 2
+
+[node name="select1" type="ColorRect" parent="." unique_id=852258651]
+offset_left = 347.0
+offset_top = 564.0
+offset_right = 404.0
+offset_bottom = 627.0
+color = Color(0, 0, 0, 0.36078432)
+
+[node name="select2" type="ColorRect" parent="." unique_id=891831430]
+offset_left = 406.0
+offset_top = 564.0
+offset_right = 479.0
+offset_bottom = 626.0
+color = Color(0, 0, 0, 0.36078432)
+
+[node name="select3" type="ColorRect" parent="." unique_id=198577547]
+offset_left = 481.0
+offset_top = 564.0
+offset_right = 554.0
+offset_bottom = 626.0
+color = Color(0, 0, 0, 0.36078432)
+
+[node name="select4" type="ColorRect" parent="." unique_id=945484376]
+offset_left = 555.0
+offset_top = 564.0
+offset_right = 628.0
+offset_bottom = 626.0
+color = Color(0, 0, 0, 0.36078432)
+
+[node name="select5" type="ColorRect" parent="." unique_id=427409907]
+offset_left = 629.0
+offset_top = 564.0
+offset_right = 702.0
+offset_bottom = 626.0
+color = Color(0, 0, 0, 0.36078432)
+
+[node name="select6" type="ColorRect" parent="." unique_id=1728266023]
+offset_left = 704.0
+offset_top = 564.0
+offset_right = 777.0
+offset_bottom = 626.0
+color = Color(0, 0, 0, 0.36078432)

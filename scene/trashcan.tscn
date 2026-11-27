@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://ddfgdm4fq00dg"]
+
+[ext_resource type="Script" uid="uid://ba0kyyswuscls" path="res://trashcan.gd" id="1_ces7g"]
+[ext_resource type="Texture2D" uid="uid://bxcaccb1h0qm4" path="res://assetss/trash can.png" id="2_gm6qi"]
+[ext_resource type="FontFile" uid="uid://cpd3tk6cnp88c" path="res://assetss/text.ttf" id="3_gm6qi"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3cfvr"]
+radius = 17.0
+height = 40.0
+
+[node name="Trashcan" type="Area2D" unique_id=405379744]
+script = ExtResource("1_ces7g")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2115370338]
+texture = ExtResource("2_gm6qi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=386477618]
+position = Vector2(0, 1)
+shape = SubResource("CapsuleShape2D_3cfvr")
+
+[node name="Label" type="Label" parent="." unique_id=1878306111]
+offset_left = -39.0
+offset_top = -23.0
+offset_right = -8.0
+offset_bottom = -1.0
+theme_override_fonts/font = ExtResource("3_gm6qi")
+theme_override_font_sizes/font_size = 10

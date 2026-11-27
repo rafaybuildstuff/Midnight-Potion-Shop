@@ -38,51 +38,16 @@ region = Rect2(0, 0, 39.33235, 43.684296)
 [node name="WardrobeInside" type="Node2D" unique_id=1348664810]
 script = ExtResource("1_yevui")
 
-[node name="herbs" type="Node" parent="." unique_id=2107150203]
-
-[node name="herb1" type="Sprite2D" parent="herbs" unique_id=2083510947]
-position = Vector2(32.5, 31.710526)
-scale = Vector2(0.6052632, 0.6052631)
-texture = ExtResource("4_6yf2x")
-region_enabled = true
-region_rect = Rect2(0, 0, 38.884933, 42.268745)
-
-[node name="herb2" type="Sprite2D" parent="herbs" unique_id=304482504]
-position = Vector2(32.5, 59.710526)
-scale = Vector2(0.6052632, 0.6052631)
-texture = ExtResource("4_6yf2x")
-region_enabled = true
-region_rect = Rect2(39.303726, -2.0225945, 38.884933, 42.268745)
-
-[node name="herb3" type="Sprite2D" parent="herbs" unique_id=1001429578]
-position = Vector2(32.5, 88.71053)
-scale = Vector2(0.6052632, 0.6052631)
-texture = ExtResource("4_6yf2x")
-region_enabled = true
-region_rect = Rect2(-0.30477524, 40.850346, 38.884933, 39.933453)
-
-[node name="herb4" type="Sprite2D" parent="herbs" unique_id=476267876]
-position = Vector2(32.5, 118.71053)
-scale = Vector2(0.6052632, 0.6052631)
-texture = ExtResource("4_6yf2x")
-region_enabled = true
-region_rect = Rect2(39.30373, 40.197453, 38.884933, 39.933453)
-
-[node name="herb5" type="Sprite2D" parent="herbs" unique_id=1550368677]
-position = Vector2(33.5, 183.71051)
-scale = Vector2(0.6052632, 0.6052631)
-texture = ExtResource("4_6yf2x")
-region_enabled = true
-region_rect = Rect2(-0.26520157, 80.1261, 38.884933, 39.933453)
-
-[node name="herb6" type="Sprite2D" parent="herbs" unique_id=295762182]
-position = Vector2(33.5, 151.71051)
-scale = Vector2(0.6052632, 0.6052631)
-texture = ExtResource("4_6yf2x")
-region_enabled = true
-region_rect = Rect2(39.202618, 80.1314, 40.58765, 32.326485)
-
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=461040441]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=1701863372]
+modulate = Color(1, 1, 1, 0.54901963)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=369440061]
 offset_left = 258.0
@@ -167,56 +132,83 @@ texture_normal = SubResource("AtlasTexture_3cfvr")
 ignore_texture_size = true
 script = ExtResource("5_dllwn")
 
-[node name="herb1" type="Label" parent="." unique_id=1936855307]
+[node name="herb1" type="Label" parent="CanvasLayer" unique_id=1936855307]
 offset_left = 51.0
 offset_top = 20.0
 offset_right = 91.0
 offset_bottom = 43.0
-text = "0"
 
-[node name="herb2" type="Label" parent="." unique_id=1285114741]
+[node name="herb2" type="Label" parent="CanvasLayer" unique_id=1285114741]
 offset_left = 51.0
 offset_top = 49.0
 offset_right = 91.0
 offset_bottom = 72.0
-text = "0"
 
-[node name="herb3" type="Label" parent="." unique_id=1087844054]
+[node name="herb3" type="Label" parent="CanvasLayer" unique_id=1087844054]
 offset_left = 51.0
 offset_top = 76.0
 offset_right = 91.0
 offset_bottom = 99.0
-text = "0"
 
-[node name="herb4" type="Label" parent="." unique_id=1909171287]
+[node name="herb4" type="Label" parent="CanvasLayer" unique_id=1909171287]
 offset_left = 51.0
 offset_top = 109.0
 offset_right = 91.0
 offset_bottom = 132.0
-text = "0"
 
-[node name="herb5" type="Label" parent="." unique_id=636839680]
+[node name="herb5" type="Label" parent="CanvasLayer" unique_id=636839680]
 offset_left = 51.0
 offset_top = 138.0
 offset_right = 91.0
 offset_bottom = 161.0
-text = "0"
 
-[node name="herb6" type="Label" parent="." unique_id=409236063]
+[node name="herb6" type="Label" parent="CanvasLayer" unique_id=409236063]
 offset_left = 51.0
 offset_top = 171.0
 offset_right = 91.0
 offset_bottom = 194.0
-text = "0"
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=1701863372]
-modulate = Color(1, 1, 1, 0.54901963)
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0, 0, 0, 1)
+[node name="herb7" type="Sprite2D" parent="CanvasLayer" unique_id=2083510947]
+position = Vector2(32.5, 31.710526)
+scale = Vector2(0.6052632, 0.6052631)
+texture = ExtResource("4_6yf2x")
+region_enabled = true
+region_rect = Rect2(0, 0, 38.884933, 42.268745)
+
+[node name="herb8" type="Sprite2D" parent="CanvasLayer" unique_id=304482504]
+position = Vector2(32.5, 59.710526)
+scale = Vector2(0.6052632, 0.6052631)
+texture = ExtResource("4_6yf2x")
+region_enabled = true
+region_rect = Rect2(39.303726, -2.0225945, 38.884933, 42.268745)
+
+[node name="herb9" type="Sprite2D" parent="CanvasLayer" unique_id=1001429578]
+position = Vector2(32.5, 88.71053)
+scale = Vector2(0.6052632, 0.6052631)
+texture = ExtResource("4_6yf2x")
+region_enabled = true
+region_rect = Rect2(-0.30477524, 40.850346, 38.884933, 39.933453)
+
+[node name="herb10" type="Sprite2D" parent="CanvasLayer" unique_id=476267876]
+position = Vector2(32.5, 118.71053)
+scale = Vector2(0.6052632, 0.6052631)
+texture = ExtResource("4_6yf2x")
+region_enabled = true
+region_rect = Rect2(39.30373, 40.197453, 38.884933, 39.933453)
+
+[node name="herb11" type="Sprite2D" parent="CanvasLayer" unique_id=1550368677]
+position = Vector2(33.5, 183.71051)
+scale = Vector2(0.6052632, 0.6052631)
+texture = ExtResource("4_6yf2x")
+region_enabled = true
+region_rect = Rect2(-0.26520157, 80.1261, 38.884933, 39.933453)
+
+[node name="herb12" type="Sprite2D" parent="CanvasLayer" unique_id=295762182]
+position = Vector2(33.5, 151.71051)
+scale = Vector2(0.6052632, 0.6052631)
+texture = ExtResource("4_6yf2x")
+region_enabled = true
+region_rect = Rect2(39.202618, 80.1314, 40.58765, 32.326485)
 
 [connection signal="herb_clicked" from="CanvasLayer/herb 5" to="." method="_on_herb_2_herb_clicked"]
 [connection signal="herb_clicked" from="CanvasLayer/herb 2" to="." method="_on_herb_3_herb_clicked"]

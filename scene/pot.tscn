@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://cpq04s5ofd30q"]
+
+[ext_resource type="Script" uid="uid://dm3xmkc27ff4d" path="res://scene/pot.gd" id="1_hnof1"]
+[ext_resource type="Texture2D" uid="uid://cilxiwgmlymyf" path="res://assetss/pot.png" id="1_nbevc"]
+[ext_resource type="FontFile" uid="uid://ddgr4hbqim1y2" path="res://assetss/heading.ttf" id="3_gpkg5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hnof1"]
+atlas = ExtResource("1_nbevc")
+region = Rect2(0, 40, 40, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gpkg5"]
+atlas = ExtResource("1_nbevc")
+region = Rect2(0, 0, 40, 40)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mel2l"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hnof1")
+}],
+"loop": 1,
+"name": &"blast",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gpkg5")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3cfvr"]
+radius = 20.0
+
+[node name="Pot" type="Area2D" unique_id=1191390622]
+script = ExtResource("1_hnof1")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=728898826]
+scale = Vector2(1.5, 1.5)
+sprite_frames = SubResource("SpriteFrames_mel2l")
+animation = &"idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1422726902]
+position = Vector2(0, 3)
+scale = Vector2(1.5, 1.5)
+shape = SubResource("CircleShape2D_3cfvr")
+
+[node name="Label" type="Label" parent="." unique_id=469223403]
+offset_left = -19.0
+offset_top = -47.0
+offset_right = 25.0
+offset_bottom = -25.0
+theme_override_fonts/font = ExtResource("3_gpkg5")
+theme_override_font_sizes/font_size = 10
